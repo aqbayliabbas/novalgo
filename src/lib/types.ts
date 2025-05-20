@@ -10,8 +10,8 @@ export interface ProjectInfo {
   numFloors: number | '';
   constructionYear: number | '';
   projectStage: string;
-  client: string;
-  architect: string;
+  maitreOeuvre: string;
+  maitreOuvrage: string;
 }
 
 export interface EvaluationScores {

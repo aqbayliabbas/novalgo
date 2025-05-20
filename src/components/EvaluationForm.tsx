@@ -47,7 +47,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ evaluation, onChange, o
         >
           {label} 
         </label>
-        <span className="text-sm font-medium text-gray-700">{points} pts</span>
+  
       </div>
     );
   };

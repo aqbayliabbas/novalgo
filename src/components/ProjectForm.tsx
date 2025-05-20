@@ -150,24 +150,24 @@ const ProjectForm: React.FC<ProjectFormProps> = ({ projectInfo, onChange }) => {
 
         {/* Client */}
         <div>
-          <label htmlFor="client" className="form-label">Client</label>
+          <label htmlFor="client" className="form-label">Maitre d'oeuvre</label>
           <input
             type="text"
             id="client"
-            value={projectInfo.client}
-            onChange={(e) => onChange({ client: e.target.value })}
+            value={projectInfo.maitreOeuvre}
+            onChange={(e) => onChange({ maitreOeuvre: e.target.value })}
             className="input-field"
           />
         </div>
 
         {/* Architect */}
         <div>
-          <label htmlFor="architect" className="form-label">Architecte</label>
+          <label htmlFor="architect" className="form-label">Maitre d'ouvrage</label>
           <input
             type="text"
             id="architect"
-            value={projectInfo.architect}
-            onChange={(e) => onChange({ architect: e.target.value })}
+            value={projectInfo.maitreOuvrage}
+            onChange={(e) => onChange({ maitreOuvrage: e.target.value })}
             className="input-field"
           />
         </div>

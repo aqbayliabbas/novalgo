@@ -44,13 +44,13 @@ const Header: React.FC<HeaderProps> = ({ onGetStarted, onBack }) => {
           transition={{ type: 'spring', stiffness: 200, damping: 30 }}
         >
           <div className="flex items-center gap-3 justify-center">
-            <motion.div
+            <motion.img
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.95 }}
-              className="w-10 h-10 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg flex items-center justify-center text-white"
-            >
-              <span className="font-bold text-lg">N</span>
-            </motion.div>
+              src="/logo.PNG"
+              alt="NOVALGO Logo"
+              className="w-10 h-10 object-contain rounded-lg shadow"
+            />
             <motion.h1
               className="text-xl font-bold text-gray-800 hidden sm:block"
               whileHover={{ scale: 1.04 }}
