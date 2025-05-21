@@ -295,7 +295,7 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ evaluation, onChange, o
       
       <button 
         onClick={onCalculate}
-        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors duration-300"
+        className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg transition-colors duration-300"
       >
         Calculer le Score
       </button>

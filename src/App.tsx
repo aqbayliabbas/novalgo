@@ -301,7 +301,7 @@ const App: React.FC = () => {
               <ScoreResult scoreResult={formState.scoreResult} />
               <div className="flex flex-col items-center mt-8 gap-4">
                 <motion.button
-                  className="px-6 py-2 rounded bg-purple-600 text-white font-semibold hover:bg-purple-700 transition"
+                  className="px-6 py-2 rounded bg-gradient-to-r from-green-500 via-green-600 to-green-700 text-white font-semibold transition"
                   onClick={() => setShowPreview(true)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.97 }}
@@ -309,7 +309,7 @@ const App: React.FC = () => {
                   Preview Rapport
                 </motion.button>
                 <motion.button
-                  className="px-6 py-2 rounded bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition"
+                  className="px-6 py-2 rounded bg-gradient-to-r from-green-500 via-green-600 to-green-700 text-white font-semibold transition"
                   onClick={() => handleDownload()}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.97 }}

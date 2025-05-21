@@ -291,17 +291,12 @@ const ReportPreviewPDF: React.FC<ReportPreviewPDFProps> = ({ projectInfo, evalua
         <section style={{ marginBottom: 28 }}>
           <h3 style={{
             fontWeight: 700,
-            fontSize: 18,
-            marginBottom: 14,
-            color: '#7f5af0',
-            letterSpacing: 0.15,
-            borderLeft: '4px solid #7f5af0',
-            paddingLeft: 12,
-            background: 'linear-gradient(90deg, #f7faff 60%, #f1ecfc 100%)',
-            borderRadius: 6,
-            boxShadow: '0 1px 4px #f1ecfc55',
+            fontSize: 20,
+            marginBottom: 18,
+            color: '#166534', // dark green
+            letterSpacing: 0.2,
           }}>
-            Informations du projet
+            Informations du Projet
           </h3>
           <table style={{
             width: '100%',

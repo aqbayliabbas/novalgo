@@ -14,14 +14,14 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ onGetStarted, onBack }) => {
   return (
     <header className="py-4 px-4 md:px-8 w-full border-b border-gray-100 bg-white relative"
-    style={{ borderRadius:'15px', width:"60%", boxShadow: '0 2px 8px rgba(0, 72, 6, 0.14)' 
+    style={{ borderRadius:'15px', width:"100%", boxShadow: '0 2px 8px rgba(0, 72, 6, 0.14)' 
       ,
       marginBottom:"50px",
       
     }}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-center relative">
-        {/* Back Arrow at far left */}
+      <div className="max-w-7xl mx-auto flex flex-row items-center justify-center relative">
+        {/* Back Arrow at far left, but use flex for centering */}
         {onBack && (
           <motion.button
             initial={{ x: -40, opacity: 0 }}
@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ onGetStarted, onBack }) => {
             whileHover={{ scale: 1.15, rotate: -10 }}
             whileTap={{ scale: 0.95, rotate: -20 }}
             onClick={onBack}
-            className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-400"
+            className="mr-6 p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400"
             aria-label="Retour"
             type="button"
             style={{ zIndex: 2 }}
@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ onGetStarted, onBack }) => {
         )}
         {/* Centered Logo and App Name */}
         <motion.div
-          className="flex flex-col items-center justify-center w-full"
+          className="flex flex-col items-center justify-center flex-1"
           initial={{ y: -30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -30, opacity: 0 }}
@@ -66,6 +66,8 @@ const Header: React.FC<HeaderProps> = ({ onGetStarted, onBack }) => {
             </motion.h1>
           </div>
         </motion.div>
+        {/* Add invisible placeholder for symmetry if onBack is present */}
+        {onBack && <div className="mr-6 w-9 h-9" />}
       </div>
     </header>
 

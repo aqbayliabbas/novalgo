@@ -25,7 +25,7 @@ const ScrollToResultButton: React.FC<ScrollToResultButtonProps> = ({ isResultCal
   return (
     <button
       onClick={scrollToResult}
-      className="fixed bottom-8 right-8 p-3 rounded-full bg-purple-600 text-white shadow-lg hover:bg-purple-700 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-400 z-10"
+      className="fixed bottom-8 right-8 p-3 rounded-full bg-green-600 text-white shadow-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-green-400 z-10"
       aria-label="Scroll to result"
     >
       <ChevronDown className="h-6 w-6" />
