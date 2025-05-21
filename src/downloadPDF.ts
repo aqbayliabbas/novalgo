@@ -88,8 +88,8 @@ function capitalizeFr(str: string) {
     numFloors: 'Nombre d’étages',
     constructionYear: 'Année de construction',
     projectStage: 'Étape du projet',
-    client: 'Client',
-    architect: 'Architecte',
+    // client: 'Client',
+    // architect: 'Architecte',
     // Add more mappings as needed
   };
   if (map[str]) return map[str];

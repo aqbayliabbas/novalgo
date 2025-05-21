@@ -20,8 +20,6 @@ const PROJECT_INFO_LABELS: Record<string, string> = {
   numFloors: 'Nombre d\'Étages',
   constructionYear: 'Année de Construction/Rénovation',
   projectStage: 'Phase du Projet',
-  client: 'Client',
-  architect: 'Architecte',
 };
 
 // Libellés d'évaluation pour PDF (copie de EVAL_LABELS)

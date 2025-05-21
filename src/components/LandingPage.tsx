@@ -10,35 +10,36 @@ interface LandingPageProps {
 const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header onGetStarted={onGetStarted} />
       
       {/* Hero Section */}
-      <div className="flex-1 flex flex-col items-center justify-center gap-8 py-16 px-4 sm:px-8 md:px-16 max-w-7xl mx-auto">
-        <div className="space-y-6 text-center">
-          <div>
-            <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
-              Nouveau
-            </span>
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-            NOVALGO <br />
-            <span className="text-blue-600">Evaluation System</span>
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            Évaluez la durabilité de vos projets de construction avec notre système d'évaluation complet basé sur 100 points.
-          </p>
-          <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              onClick={onGetStarted}
-              size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-lg"
-            >
-              Commencer l'évaluation
-            </Button>
+      <div className="flex-1 w-full flex flex-col items-center justify-center gap-8 py-16 px-4 sm:px-8 md:px-16 bg-cover bg-center relative"
+      style={{ backgroundImage: `url('/bg.jpg')` }} 
+      >
+      <Header onGetStarted={onGetStarted} 
+      
+      />
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="space-y-6 text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              NOVALGO <br />
+              <span className="text-blue-600">Evaluation Des Projets</span>
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+              Une méthode d’évaluation des bâtiments durables, conçue pour le
+              contexte climatique, culturel et économique de l’Algérie.
+            </p>
+            <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                onClick={onGetStarted}
+                size="lg" 
+                className="bg-blue-600 hover:bg-blue-700 text-lg"
+              >
+                Commencer l'évaluation
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-      
       {/* Features Section */}
       <div className="bg-gray-50 py-16 px-4" id="features">
         <div className="max-w-7xl mx-auto">

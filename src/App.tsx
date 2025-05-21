@@ -37,8 +37,8 @@ const App: React.FC = () => {
       numFloors: '',
       constructionYear: '',
       projectStage: '',
-      client: '',
-      architect: '',
+      // client: '',
+      // architect: '',
     },
     evaluation: {
       materials: {

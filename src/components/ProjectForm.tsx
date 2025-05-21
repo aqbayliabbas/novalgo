@@ -150,7 +150,7 @@ const ProjectForm: React.FC<ProjectFormProps> = ({ projectInfo, onChange }) => {
 
         {/* Client */}
         <div>
-          <label htmlFor="client" className="form-label">Maitre d'oeuvre</label>
+          <label htmlFor="client" className="form-label">Maitre oeuvre</label>
           <input
             type="text"
             id="client"
@@ -162,7 +162,7 @@ const ProjectForm: React.FC<ProjectFormProps> = ({ projectInfo, onChange }) => {
 
         {/* Architect */}
         <div>
-          <label htmlFor="architect" className="form-label">Maitre d'ouvrage</label>
+          <label htmlFor="architect" className="form-label">Maitre ouvrage</label>
           <input
             type="text"
             id="architect"
