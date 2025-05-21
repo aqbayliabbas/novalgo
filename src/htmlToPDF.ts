@@ -267,7 +267,7 @@ export async function downloadFormAndEvalAsPDF(
   doc.setFontSize(14);
   doc.setTextColor(255,255,255);
   doc.setFont(undefined, 'bold');
-  doc.text(labelText, doc.internal.pageSize.getWidth()/2, labelY + labelHeight/2 + 4, { align: 'center' });
+  doc.text(labelText, doc.internal.pageSize.getWidth()/2, labelY + labelHeight/2 + 2, { align: 'center' });
   doc.setFont(undefined, 'normal');
   y = labelY + labelHeight + 4;
 
@@ -280,7 +280,7 @@ export async function downloadFormAndEvalAsPDF(
   y += 12;
 
   // --- Project Info Section ---
-  doc.setFillColor(127, 90, 240); // purple
+  doc.setFillColor(23, 163, 74); // green
   doc.roundedRect(marginLeft - 3, y - 4, maxWidth + 6, 10, 2, 2, 'F');
   doc.setFont(undefined, 'bold');
   doc.setTextColor(255, 255, 255);
@@ -309,7 +309,7 @@ export async function downloadFormAndEvalAsPDF(
 
 
   // --- Score Result Section ---
-  doc.setFillColor(127, 90, 240); // purple
+  doc.setFillColor(23, 163, 74); // green
   doc.roundedRect(marginLeft - 3, y - 4, maxWidth + 6, 10, 2, 2, 'F');
   doc.setFont(undefined, 'bold');
   doc.setTextColor(255,255,255);

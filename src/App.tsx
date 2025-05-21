@@ -60,7 +60,18 @@ const App: React.FC = () => {
       comfort: {
         thermal: { temperature: false, bioclimatic: false, solarProtection: false },
         acoustic: { insulation: false, windows: false, noise: false },
-        visual: { naturalLight: false, uniform: false, depth: false }
+        visual: { naturalLight: false, uniform: false, depth: false },
+        olfactory: {
+          ventilationSizing: false,
+          separation: false,
+          materialChoice: false
+        },
+        hygrometric: {
+          humidityRegulation: false,
+          humidityVentilation: false,
+          capillaryProtection: false,
+          waterproofing: false
+        }
       },
       waste: {
         construction: { triZone: false, awareness: false, control: false },
@@ -181,6 +192,15 @@ const App: React.FC = () => {
     if (comfort.visual.naturalLight) totalScore += EVALUATION_POINTS.comfort.visual.naturalLight;
     if (comfort.visual.uniform) totalScore += EVALUATION_POINTS.comfort.visual.uniform;
     if (comfort.visual.depth) totalScore += EVALUATION_POINTS.comfort.visual.depth;
+    // Olfactory Comfort
+    if (comfort.olfactory.ventilationSizing) totalScore += EVALUATION_POINTS.comfort.olfactory.ventilationSizing;
+    if (comfort.olfactory.separation) totalScore += EVALUATION_POINTS.comfort.olfactory.separation;
+    if (comfort.olfactory.materialChoice) totalScore += EVALUATION_POINTS.comfort.olfactory.materialChoice;
+    // Hygrothermal Comfort
+    if (comfort.hygrometric.humidityRegulation) totalScore += EVALUATION_POINTS.comfort.hygrometric.humidityRegulation;
+    if (comfort.hygrometric.humidityVentilation) totalScore += EVALUATION_POINTS.comfort.hygrometric.humidityVentilation;
+    if (comfort.hygrometric.capillaryProtection) totalScore += EVALUATION_POINTS.comfort.hygrometric.capillaryProtection;
+    if (comfort.hygrometric.waterproofing) totalScore += EVALUATION_POINTS.comfort.hygrometric.waterproofing;
     
     // Calculate points for Waste
     const waste = formState.evaluation.waste;

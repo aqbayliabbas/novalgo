@@ -89,6 +89,17 @@ export interface EvaluationScores {
       uniform: boolean;
       depth: boolean;
     };
+    olfactory: {
+      ventilationSizing: boolean;
+      separation: boolean;
+      materialChoice: boolean;
+    };
+    hygrometric: {
+      humidityRegulation: boolean;
+      humidityVentilation: boolean;
+      capillaryProtection: boolean;
+      waterproofing: boolean;
+    };
   };
   waste: {
     construction: {

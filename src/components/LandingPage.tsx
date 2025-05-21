@@ -96,18 +96,6 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
               description="Sécurité incendie et accessibilité"
             />
           </div>
-          
-          <div className="mt-12 text-center">
-            <Button 
-              onClick={onGetStarted}
-              variant="outline" 
-              size="lg" 
-              style={{ color: '#17a34a', borderColor: '#17a34a', backgroundColor: 'black' }}
-            >
-              Commencer l'évaluation
-              <ArrowDown className="ml-2 h-4 w-4" />
-            </Button>
-          </div>
         </div>
       </div>
       

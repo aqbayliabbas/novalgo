@@ -125,6 +125,17 @@ export const EVALUATION_POINTS = {
       naturalLight: 1.5,
       uniform: 1.75,
       depth: 1.75
+    },
+    olfactory: {
+      ventilationSizing: 1.75, // Bon dimensionnement de la ventilation dans les zones sensibles (cuisine, WC)
+      separation: 1.5, // Séparation des espaces par usage (technique / habité)
+      materialChoice: 1.75 // Choix de matériaux inodores ou naturellement parfumés (bois, argile...)
+    },
+    hygrometric: {
+      humidityRegulation: 1.25, // Utilisation de matériaux régulateurs d’humidité de matériaux respirant (terre crue, enduits naturels)
+      humidityVentilation: 1, // Ventilation adaptée au contrôle de l’humidité (Aération naturelle ou mécanique ou croisée ou VMC)
+      capillaryProtection: 1.25, // Protection contre les remontées capillaires (Mise en place de coupures capillaires)
+      waterproofing: 1 // Étanchéité à l’eau de pluie et à l’humidité extérieure
     }
   },
   waste: {
