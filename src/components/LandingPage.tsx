@@ -45,6 +45,29 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
           </div>
         </div>
       </div>
+      {/* Découvrir la méthode Section */}
+      <section className="bg-white py-16 px-4 border-b border-gray-200" id="decouvrir-methode">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Découvrir la méthode</h2>
+          <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-line">
+La méthode NOVALGO ambitionne de fournir une réponse concrète aux enjeux climatiques,
+énergétiques, environnementaux et sociaux actuels, tout en valorisant les spécificités locales
+(matériaux, climat, pratiques constructives traditionnelles). Elle constitue un levier stratégique
+pour encourager une architecture plus responsable, performante et contextualisée.
+Cette méthode est conçue comme un outil flexible et évolutif, applicable à toutes les phases du
+cycle de vie du bâtiment (de la conception à l’exploitation), et compatible avec différents types
+de projets (logements, équipements publics, bâtiments tertiaires, etc.).
+NOVALGO repose sur une approche multicritère, structurée autour de catégories d’évaluation
+inspirées des méthodes internationales existantes (HQE, LEED, BREEAM…), mais adaptées
+aux réalités algériennes, sur la base de l’analyse comparative réalisée en amont.
+Elle vise à accompagner les acteurs du bâtiment (architectes, ingénieurs, promoteurs,
+collectivités locales) dans leurs choix en matière de performance énergétique, gestion des
+ressources, confort, et intégration environnementale, avec pour objectif final la réduction de
+l’impact écologique des constructions en Algérie.
+          </p>
+        </div>
+      </section>
+
       {/* Features Section */}
       <div className="bg-gray-50 py-16 px-4" id="features">
         <div className="max-w-7xl mx-auto">
@@ -99,6 +122,22 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
         </div>
       </div>
       
+      {/* Pourquoi NOVALGO Section */}
+      <section className="bg-green-50 py-16 px-4 border-t border-b border-green-100" id="pourquoi-novalgo">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-green-800 mb-6 text-center">Pourquoi NOVALGO</h2>
+          <ul className="text-lg text-gray-800 space-y-3 list-disc list-inside">
+            <li>Réduire l’impact environnemental du bâtiment</li>
+            <li>Optimiser la performance énergétique</li>
+            <li>Améliorer le confort des usagers</li>
+            <li>Encourager l’usage de matériaux durables et locaux</li>
+            <li>Renforcer la résilience climatique des constructions</li>
+            <li>Fournir un outil de gestion adapté aux professionnels algériens</li>
+            <li>Mettre en place un label environnemental national</li>
+          </ul>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-white py-8 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 text-center">
