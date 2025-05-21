@@ -209,7 +209,7 @@ const ReportPreviewPDF: React.FC<ReportPreviewPDFProps> = ({ projectInfo, evalua
       overflow: 'hidden',
       border: 'none',
     }}>
-      <div style={{ height: 10, background: 'linear-gradient(90deg, #7f5af0 0%, #2cb67d 100%)' }} />
+      <div style={{ height: 10, background: 'linear-gradient(90deg, #22c55e 0%, #2cb67d 100%)' }} />
       <header style={{
         marginBottom: 32,
         padding: '40px 60px 0 60px',
@@ -220,8 +220,8 @@ const ReportPreviewPDF: React.FC<ReportPreviewPDFProps> = ({ projectInfo, evalua
           fontSize: 28,
           letterSpacing: 0.5,
           margin: 0,
-          color: '#312e81',
-          textShadow: '0 2px 8px #e0e7ff55'
+          color: '#166534', // dark green
+          textShadow: '0 2px 8px #bbf7d055'
         }}>
           Rapport NOVALGO
         </h2>

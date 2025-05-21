@@ -14,7 +14,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ onGetStarted, onBack }) => {
   return (
     <header className="py-4 px-4 md:px-8 w-full border-b border-gray-100 bg-white relative"
-    style={{ borderRadius:'15px', width:"60%", boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)' 
+    style={{ borderRadius:'15px', width:"60%", boxShadow: '0 2px 8px rgba(0, 72, 6, 0.14)' 
       ,
       marginBottom:"50px",
       

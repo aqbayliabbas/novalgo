@@ -11,7 +11,7 @@ interface ProjectFormProps {
 const ProjectForm: React.FC<ProjectFormProps> = ({ projectInfo, onChange }) => {
   return (
     <div className="mb-8">
-      <h2 className="section-title">Informations du Projet</h2>
+      <h2 className="section-title text-center mb-8">Informations du Projet</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Project Name */}
         <div className="col-span-1 md:col-span-2">

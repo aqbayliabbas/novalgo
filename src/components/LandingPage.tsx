@@ -12,19 +12,24 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
     <div className="min-h-screen flex flex-col">
       
       {/* Hero Section */}
-      <div className="flex-1 w-full flex flex-col items-center justify-center gap-8 py-16 px-4 sm:px-8 md:px-16 bg-cover bg-center relative"
-      style={{ backgroundImage: `url('/bg.jpg')` }} 
+      <div className="flex-1 w-full flex flex-col items-center justify-center gap-8 py-16 px-4 sm:px-8 md:px-16 bg-cover bg-center relative overflow-hidden"
+      style={{ backgroundImage: `url('/bg.jpg')` }}
       >
+        {/* Overlay for contrast */}
+        <div
+          className="absolute inset-0 bg-black opacity-60 z-0 pointer-events-none"
+          aria-hidden="true"
+        />
       <Header onGetStarted={onGetStarted} 
       
       />
-        <div className="max-w-7xl mx-auto w-full">
+        <div className="max-w-7xl mx-auto w-full relative z-10">
           <div className="space-y-6 text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               NOVALGO <br />
-              <span className="text-blue-600">Evaluation Des Projets</span>
+              <span className="text-green-600">Evaluation Des Projets</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
               Une méthode d’évaluation des bâtiments durables, conçue pour le
               contexte climatique, culturel et économique de l’Algérie.
             </p>
@@ -32,7 +37,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
               <Button 
                 onClick={onGetStarted}
                 size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-lg"
+                style={{ backgroundColor: '#17a34a', borderColor: '#17a34a', color: 'white' }}
               >
                 Commencer l'évaluation
               </Button>
@@ -97,7 +102,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
               onClick={onGetStarted}
               variant="outline" 
               size="lg" 
-              className="text-purple-600 border-purple-600 hover:bg-purple-50"
+              style={{ color: '#17a34a', borderColor: '#17a34a', backgroundColor: 'black' }}
             >
               Commencer l'évaluation
               <ArrowDown className="ml-2 h-4 w-4" />
