@@ -101,40 +101,40 @@ export const EVALUATION_POINTS = {
     },
     rainwater: {
       surface: 1,
-      storage: 1.5,
-      filtration: 1.5
+      storage: 1,
+      filtration: 1
     },
     wastewater: {
-      pretreatment: 1.5,
-      separation: 1.5,
+      pretreatment: 1,
+      separation: 1,
       reuse: 1
     }
   },
   comfort: {
     thermal: {
-      temperature: 1.5,
-      bioclimatic: 1.75,
-      solarProtection: 1.75
+      temperature: 1,
+      bioclimatic: 1,
+      solarProtection: 1
     },
     acoustic: {
-      insulation: 1.75,
-      windows: 1.75,
-      noise: 1.5
+      insulation: 1,
+      windows: 1,
+      noise: 1
     },
     visual: {
-      naturalLight: 1.5,
-      uniform: 1.75,
-      depth: 1.75
+      naturalLight: 1,
+      uniform: 1,
+      depth: 1
     },
     olfactory: {
-      ventilationSizing: 1.75, // Bon dimensionnement de la ventilation dans les zones sensibles (cuisine, WC)
-      separation: 1.5, // Séparation des espaces par usage (technique / habité)
-      materialChoice: 1.75 // Choix de matériaux inodores ou naturellement parfumés (bois, argile...)
+      ventilationSizing: 1, // Bon dimensionnement de la ventilation dans les zones sensibles (cuisine, WC)
+      separation: 1, // Séparation des espaces par usage (technique / habité)
+      materialChoice: 1 // Choix de matériaux inodores ou naturellement parfumés (bois, argile...)
     },
     hygrometric: {
-      humidityRegulation: 1.25, // Utilisation de matériaux régulateurs d’humidité de matériaux respirant (terre crue, enduits naturels)
+      humidityRegulation: 1, // Utilisation de matériaux régulateurs d’humidité de matériaux respirant (terre crue, enduits naturels)
       humidityVentilation: 1, // Ventilation adaptée au contrôle de l’humidité (Aération naturelle ou mécanique ou croisée ou VMC)
-      capillaryProtection: 1.25, // Protection contre les remontées capillaires (Mise en place de coupures capillaires)
+      capillaryProtection: 1, // Protection contre les remontées capillaires (Mise en place de coupures capillaires)
       waterproofing: 1 // Étanchéité à l’eau de pluie et à l’humidité extérieure
     }
   },
@@ -158,9 +158,9 @@ export const EVALUATION_POINTS = {
       qualityPrice: 1.25
     },
     solutions: {
-      simpleSystems: 1.5,
-      multifunctional: 1,
-      localLabor: 1.5
+      simpleSystems: 1.75,
+      multifunctional: 1.5,
+      localLabor: 1.75
     }
   },
   biodiversity: {

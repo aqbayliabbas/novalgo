@@ -27,7 +27,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
           <div className="space-y-6 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               NOVALGO <br />
-              <span className="text-green-600">Evaluation Des Projets</span>
+              <span className="text-green-600">Evaluation Des bâtiments</span>
             </h1>
             <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
               Une méthode d’évaluation des bâtiments durables, conçue pour le
