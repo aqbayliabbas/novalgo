@@ -52,8 +52,54 @@ const EvaluationForm: React.FC<EvaluationFormProps> = ({ evaluation, onChange, o
     );
   };
 
+  // Helper to flatten all checkbox values into an array
+  const getAllCheckboxValues = () => {
+    const values: boolean[] = [];
+    Object.values(evaluation).forEach(category => {
+      if (typeof category === 'object' && category !== null) {
+        Object.values(category).forEach(subcat => {
+          if (typeof subcat === 'object' && subcat !== null) {
+            Object.values(subcat).forEach(field => {
+              if (typeof field === 'boolean') {
+                values.push(field);
+              }
+            });
+          }
+        });
+      }
+    });
+    return values;
+  };
+
+  const allChecked = getAllCheckboxValues().every(Boolean);
+  const someChecked = getAllCheckboxValues().some(Boolean);
+
+  // Helper to set all checkboxes to a value
+  const setAllCheckboxes = (checked: boolean) => {
+    // Deep clone and set all boolean fields
+    const setDeep = (obj: any): any => {
+      if (typeof obj === 'boolean') return checked;
+      if (typeof obj === 'object' && obj !== null) {
+        const newObj: any = Array.isArray(obj) ? [] : {};
+        for (const key in obj) {
+          newObj[key] = setDeep(obj[key]);
+        }
+        return newObj;
+      }
+      return obj;
+    };
+    onChange(setDeep(evaluation));
+  };
+
   return (
-    <div className="mb-8">
+    <div className="mb-8 relative">
+      <button
+        type="button"
+        className="absolute top-0 right-0 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300 z-10"
+        onClick={() => setAllCheckboxes(!someChecked)}
+      >
+        {someChecked ? 'Déselectionner Tout' : 'Selectionner Tout'}
+      </button>
       <h2 className="section-title">Évaluation NOVALGO </h2>
       
       {/* Materials (15 pts) */}

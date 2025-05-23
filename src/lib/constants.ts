@@ -134,8 +134,8 @@ export const EVALUATION_POINTS = {
     hygrometric: {
       humidityRegulation: 1, // Utilisation de matériaux régulateurs d’humidité de matériaux respirant (terre crue, enduits naturels)
       humidityVentilation: 1, // Ventilation adaptée au contrôle de l’humidité (Aération naturelle ou mécanique ou croisée ou VMC)
-      capillaryProtection: 1, // Protection contre les remontées capillaires (Mise en place de coupures capillaires)
-      waterproofing: 1 // Étanchéité à l’eau de pluie et à l’humidité extérieure
+      capillaryProtection: 0.5, // Protection contre les remontées capillaires (Mise en place de coupures capillaires)
+      waterproofing: 0.5 // Étanchéité à l’eau de pluie et à l’humidité extérieure
     }
   },
   waste: {
